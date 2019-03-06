@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Group No.12</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+      <link href = "bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+      <script src = "bootstrap/js/bootstrap.min.js"></script>
+       
+       <script src="js/formActivity.js"></script>
+   </head>
+
+    <body>
+
+        <div class="container-fluid">
+            <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="php/uploadFile.php">
+
+                <div class="form-check form-check-inline row">
+                    <div class="col-sm-5">
+                        <span>Mode of Operation:-</span> 
+                    </div>
+                    <div class="col-sm-7">
+                        <input class="form-check-input" type="radio" name="Mode" onclick="modeFunction('automatic')" value="a">
+                        <label class="radio-inline form-check-label">Automatic</label>&nbsp;&nbsp;
+                        <input class="form-check-input" type="radio" name="Mode" onclick="modeFunction('manual')" value="m">
+                        <label class="radio-inline form-check-label">Manual</label>
+                    </div>
+                </div>
+                <hr>
+
+            <h4>Other Details</h4>
+              <div class="form-horizontal" id="SecondForm">
+                <div class="form-group row">
+                  <label class="control-label col-sm-2 col-form-label" for="email">College Name:-</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="collegeName" placeholder="College Name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2 col-form-label" for="pwd">Question Setter:-</label>
+                  <div class="col-sm-10">          
+                    <input type="text" class="form-control" id="questionSetter" placeholder="Teacher Name">
+                  </div>
+                </div>
+                <div class="form-group">        
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Generate Report</button>
+                      <input type="submit" class="btn btn-primary" value="Upload Image" name="submit">
+                  </div>
+                </div>
+              </div>
+
+                
+
+            </form>
+        </div>
+
+   </body>
+</html>
+
+    
+    
+</body>
+</html>
