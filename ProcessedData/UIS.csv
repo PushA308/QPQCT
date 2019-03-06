@@ -1,0 +1,24 @@
+Desc,Q1,A),What are the reasons for the popularity & success of Unix/Linux O.S.,2,CO1,Module1
+Prog,Q1,B),"Give the basic function following system call and enlist their two uses of each.
+1.vfork, 2. Signal 3. Kill 5. Exit.",4,CO3,Module1
+Drg,Q2,A),Draw and elaborate the blocks of file system layout. Which block helps to find maximum numbers files/directory user can create? Which block gives information about state of file system? ,4,CO1,Module2
+Prog,Q2,B),"Enlist the five scenarios of getblk algorithm, which scenarios are suffered from race condition? Why?",4,CO2,Module2
+An-S,Q3,,"Write in short: (2*4=8) (any four)
+a)Justify, why various fields of U area required to access during the process execution only.
+b)In the algorithm getblk, if kernel removes a buffer from free list, it must raise the process priority level to block out interrupts before checking free list. Why?
+c)Why there is per user or per process file descriptor table?
+d)Kernel is non preemptive does it means mutual exclusive is there on kernel, if yes/no justify.
+e)Why there is lock on inode, when there is read or write system calls on a inode but not while opening or creating a file?
+f)Why free list of buffer in buffer cache is implemented like LRU, if it is implemented like MFU, what will happen?
+g)The algorithms iget and iput do not require the processor execution level to be raised to block out the interrupts? What does this implies?",8,CO2,Mixed
+Des,Q4,A),"For the following sequence system call, draw the files data structure entries.(per process FDT, File table and inode table) 
+Process A 
+fd1=open(“etc/password”, R); fd2= dup(fd1); fd3 = open(“etc/password”, W); 
+fd4= create(“hari.c”, W); fd5=open(“etc/password”, R);
+Process B
+fd1=open(“etc/password”, R); fd2= dup(fd1); fd3 = open(“private”, W);
+fd4=open(“etc/password”, R);
+Then again draw the data structure entries for following:
+Process A:Close (fd1);Close (fd3);
+Process B:Close (fd2);Close (fd3); ",4,CO3,Module3
+An-M,Q4,B),", double indirect and triple indirect blocks are required for file size of 3,50,000 Bytes. (Consider system V, 1 logical block = 1K bytes, Block number address: a 32 bit (4byte) integer) What is maximum size of file a file system support? What is maximum number of files a file system can contain?",4,CO3,Module3
